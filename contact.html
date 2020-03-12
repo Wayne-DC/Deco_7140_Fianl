@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Old West</title>
+    <!-- load CSS -->
+    <link rel="stylesheet" href="css/website.css" />
+    <!-- load browser icon-->
+    <link rel="icon" href="images/browser-icon.png">
+</head>
+<body class="contact-body">
+    <div class="header">
+        <div class="inner">
+            <div class="logo">
+                <a class href="index.html">
+                    <img src="images/logo.png" alt="Old West">
+                </a>
+            </div>
+            <div class="navs">
+                <a href="index.html" class="nav" id="current">Home</a>
+                <a href="activity.html" class="nav">Activity</a>
+                <a href="recommendation.html" class="nav">Recommendation</a>
+                <a href="contact.html" class="nav">Contact</a>
+            </div>
+            <div class="menu">
+                    <div id="menu-button" class="menu-button">
+                        MENU
+                    </div>
+                    <div id="menu-content" class="menu-content">
+                        <ul class="menu-content__nav">
+                            <li>
+                                <a href="index.html" class="nav" id="current">Home</a>
+                            </li>
+                            <li>
+                                <a href="activity.html" class="nav">Activity</a>
+                            </li>
+                            <li>
+                                <a href="recommendation.html" class="nav">Recommendation</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+        </div>
+    </div>
+    <hr>
+    <div class="cowboy-logo">
+        <section class="cowboy-heart">
+            <img src="images/cowboy-heart.png" alt="cowboy-heart">
+        </section>
+    </div>
+    <hr>
+    <div class="contact-title">
+        <h1>Contact us</h1>
+        <p class="contact-describtion">
+            Getting more information or customizing your plan!
+        </p>
+    </div>
+    <div class="contact-content">
+        <div class="map">
+        <iframe id="map-pic"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77693.41868091606!2d-105.17437883748227!3d38.761199380208815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8714a4857bc1cc4d%3A0xd14ac36d2725c603!2sCripple%20Creek%2C%20CO%2C%20USA!5e0!3m2!1sen!2sau!4v1572526067022!5m2!1sen!2sau"
+             width="650px" height="800px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <section id="contact-form">
+            <fieldset>
+                <legend>Your Details</legend>
+                <div class="form-item">
+                    <label for="form-full-name">Name:</label>
+                    <div class="form-element">
+                        <input type="text" name="full_name" id="form-full-name" placeholder="First and last names" onchange="handleNameChange(this.value)"/>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label>Age:</label>
+                    <div class="form-element">
+                        <label for="form-age-15-20">
+                            <input type="radio" id="form-age-15-20" name="age"> 18-25
+                        </label>
+                        <label for="form-age-21-25">
+                            <input type="radio" id="form-age-21-25" name="age"> 25-35
+                        </label>
+                        <label for="form-age-26-30">
+                            <input type="radio" id="form-age-26-30" name="age"> 35-45
+                        </label>
+                        <label for="form-age-30">
+                            <input type="radio" id="form-age-30" name="age"> 45+
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="form-phone">Phone:</label>
+                    <div class="form-element">
+                        <input type="text" name="phone" id="form-phone"
+                            placeholder="Phone number including area code" />
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="form-email">Email:</label>
+                    <div class="form-element">
+                        <input type="text" name="email" id="form-email" placeholder="Must be a valid email address" onchange="handleEmailChange(this.value)"/>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="form-full-name">State:</label>
+                    <div class="form-element">
+                        <input type="text" name="full_name" id="form-full-name" placeholder="Nation" />
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="form-postcode">Postcode:</label>
+                    <div class="form-element">
+                        <input type="text" name="postcode" id="form-postcode" placeholder="4 number postcode" />
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="form-state">Plan</label>
+                    <div class="form-element">
+                        <select name="form-state">
+                            <option>None</option>
+                            <option>Single</option>
+                            <option>Couple</option>
+                            <option>Family</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label>What do you want from this trip?</label>
+                    <div class="form-element">
+                        <label for="form-favourite-hole">
+                            <input type="checkbox" id="form-favourite-hole" name="favourite[]"> Enjoy the quite life!
+                        </label>
+                        <label for="form-favourite-hatter">
+                            <input type="checkbox" id="form-favourite-hatter" name="favourite[]"> Get a better
+                            relationship with family or friends!
+                        </label>
+                        <label for="form-favourite-broom">
+                            <input type="checkbox" id="form-favourite-broom" name="favourite[]"> Recall the good old
+                            days!
+                        </label>
+                        <label for="form-favourite-none">
+                            <input type="checkbox" id="form-favourite-none" name="favourite[]"> None of the above
+                        </label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="form-comments">Other Requirements:</label>
+                    <div class="form-element">
+                        <textarea id="form-comments" name="comments" rows="10" placeholder="Not more than 150 letters."></textarea>
+                        </div>
+                </div>
+                    <!-- <button onclick="finish()">Submit</button> -->
+                <div class="contact-button">
+                    <button onclick="finish()">Submit</button>
+                </div>
+            </fieldset>
+        </section>
+        <div id="success">
+            Your Submission is successful!
+            <div>
+                <h3>Name: </h3><div id="name"></div>
+            </div>
+            <div>
+                <h3>Email: </h3><div id="email"></div>
+            </div>
+            <a href="index.html">
+                Back to Home Page
+            </a>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jscript.js"></script>
+</body>
+</html>
